@@ -1,15 +1,17 @@
 import React, { useState, useRef } from "react";
+import { useNavigate } from "react-router-dom";
 
 import axios from "axios";
 
 import Arrow from "../../assets/arrow.svg";
 import People from "../../assets/people.svg";
 
+import H1 from '../../components/Title'
+
 import {
   Container,
   Image,
   ContainerItens,
-  H1,
   InputLabel,
   Input,
   Button,
@@ -19,6 +21,7 @@ function App() {
   const [users, setUsers] = useState([]);
   const inputName = useRef();
   const inputAge = useRef();
+  const navigate = useNavigate()
 
   async function addNewUser() {
     const { data: newUsers } = await axios.post("http://localhost:3001/users", {
@@ -27,6 +30,8 @@ function App() {
     });
     console.log(newUsers);
     setUsers([...users, newUsers]);
+
+    navigate("/usuarios")
   }
 
   return (

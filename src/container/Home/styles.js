@@ -10,7 +10,9 @@ export const Container = styled.div`
   align-items: center;
   gap: 40px;
 
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
+
 `;
 
 export const Image = styled.img`
@@ -31,21 +33,7 @@ export const ContainerItens = styled.div`
   display: flex;
   flex-direction: column;
 
-  height: 100vh;
-`;
-
-export const H1 = styled.h1`
-  font-style: normal;
-  font-weight: 700;
-  font-size: 34px;
-  line-height: 40px;
-  /* identical to box height */
-
-  text-align: center;
-
-  color: #ffffff;
-
-  margin-bottom: 80px;
+  min-height: calc(100vh - 250px);
 `;
 
 export const InputLabel = styled.p`
