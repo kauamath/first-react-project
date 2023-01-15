@@ -7,14 +7,14 @@ import Arrow from "../../assets/arrow.svg";
 import People from "../../assets/people.svg";
 
 import H1 from '../../components/Title'
+import ContainerItens from '../../components/ContainerItens'
+import Button from '../../components/Button'
 
 import {
   Container,
   Image,
-  ContainerItens,
   InputLabel,
   Input,
-  Button,
 } from "./styles";
 
 function App() {
