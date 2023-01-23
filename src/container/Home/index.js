@@ -39,7 +39,7 @@ function App() {
       <Image alt="logo-image" src={People} />
 
       <ContainerItens>
-        <H1>Olá</H1>
+        <H1>Olá!</H1>
         <InputLabel>Nome</InputLabel>
         <Input ref={inputName} placeholder="nome"></Input>
 
